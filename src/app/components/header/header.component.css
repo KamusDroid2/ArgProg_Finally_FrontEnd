@@ -1,0 +1,27 @@
+div{
+    background-color: rgb(50, 6, 144);
+}
+.navbar{
+float: none;}
+
+img{
+    width: 120px; 
+}
+#redes{
+    float: right;
+    width: 200px;
+    margin-top: 15px;
+    margin-right: 15px;
+
+}
+#logo{
+    width: 120px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#fb{
+    width: 50px;
+    border-radius: 8px;
+
+}
