@@ -1,4 +1,27 @@
+.profile-background{
+    width: 100%;
+}
 .profile-image{
-    width: 200px;
+    width: 300px;
     border-radius: 200px;
+}
+.row{
+    border-top: 15%;
+    border-bottom: 15%;
+
+    border-radius: 20px;
+
+    background-color:  rgba(100, 12, 223, 0.7);
+}
+h4{
+    color: azure;
+    font-family: acme;
+}
+h3{
+    color: azure;
+    font-family: acme;
+}
+p{
+    color: azure;
+    font-family: acme;
 }

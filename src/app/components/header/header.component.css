@@ -1,8 +1,86 @@
-div{
-    background-color: rgb(50, 6, 144);
+nav {
+    position: fixed;
+    width: 100%;
+    height: 12%;
+    padding: 20 px 20px;
+    box-sizing: border-box;
+    background: rgba(32, 0, 51, 0.6);
+   
+    border-radius: 20px;
 }
-.navbar{
-float: none;}
+
+header {
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+
+}
+.a{
+    font-size: 40px;
+    margin-bottom: 6px;
+   
+}
+
+.navbar-brand{
+    margin: 0 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    color: rgb(0, 0, 0);
+    margin-top: 0%;
+    margin-left: -5%;
+    font-size: 40px;
+}
+.navbar-brand:hover {
+    transition: 0.5s;
+    color: azure;
+
+}
+.main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+
+.menu-item {
+    margin: 0 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    color: azure;
+    margin-bottom: 8px;
+
+}
+
+.cta {
+    padding: 10px 24px;
+    border-radius: 15px;
+    background-color: var(--main-color);
+    color: rgb(157, 155, 155);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 8px;
+
+}
+
+.cta:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+}
+
+.menu-item:hover {
+    color: var(--main-color);
+
+}
 
 img{
     width: 120px; 
