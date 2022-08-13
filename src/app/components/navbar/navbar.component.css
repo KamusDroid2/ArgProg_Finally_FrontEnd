@@ -1,89 +1,64 @@
-nav {
-    float: inline-start;
-    position: fixed;
+header {
+    height: 120px;
     width: 100%;
-    height: 12%;
-    padding: 20 px 20px;
-    box-sizing: border-box;
-    background: rgba(8, 13, 158, 0.6);
-   
-    border-radius: 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+    background-image: url(../../../assets/img/png4.png);
+}
+#capa{
+    background-color: rgba(0, 140, 255, 0.3);
 }
 #logo{
-    float: left;
-    position:fixed;
+    width:400px;
+    float:left;
+    cursor:pointer;
+    transition:all 300ms ;
+    margin-top: 20px;
 }
-#menu ul{
+#logoi {
+    width: 80px;
+}
+#logo h3{
     float: right;
-
-    height: 20px;
-    background: transparent;
+    
+    color: azure;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 17px;
+    transition: all 300ms;
 }
-#menu ul li{
-    font-size: 22px;
-    display: inline-block;
-    margin: 0px 20px 0px 20px;
+#logo h3:hover{
+    color: rgb(156, 193, 241);
+}
+
+nav {
+    
+    margin-right: 0%;
+    float: right;
+    
+
+}
+
+#menu {
+    
+    font-size: 18px;
+    margin-right: 0px;
+    float: right;
     letter-spacing: 1px;
     color: azure;
-}
-#menu ul li a{
-    color: white;
-}
-img{
-    width: 120px; 
-}
-#redes{
-    float: right;
-    width: 300px;
-    margin-top: 15px;
-    margin-right: 15px;
-
-}
-#logo{
-    width: 120px;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-#fb{
-    width: 50px;
-    border-radius: 8px;
-}
-
-/*header {
-    height: auto;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s;
-
-}
-
-
-.navbar-brand{
-    margin: 0 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.5s;
-    color: rgb(0, 0, 0);
-    margin-top: 0%;
-    margin-left: -5%;
-    font-size: 25px;
-}
-.navbar-brand:hover {
-    transition: 0.5s;
-    color: azure;
-
-}
-.menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
+    background: transparent;
     
+}
+
+#menu ul li {
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 3%;
+    margin-right: 0%;
+  
+}
+.menu ul li a {
+    color: white;
 }
 
 .menu-item {
@@ -110,15 +85,10 @@ img{
 
 .cta:hover {
     color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 140, 255, 0.3);
     border-radius: 40px;
 }
 
 .menu-item:hover {
-    color: var(--main-color);
-
+    color:rgb(126, 126, 171);
 }
-
-
-
-}*/

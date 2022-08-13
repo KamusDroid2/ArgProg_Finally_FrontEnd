@@ -4,5 +4,13 @@
 }
 @font-face {
     font-family: acme;
-    src: url(./assets/fonts/Acme/Acme-Regular.ttf);
+    src: url("/assets/fonts/Acme/Acme-Regular.ttf");
+}
+
+body{
+    background: url("/assets/img/pattern.png");
+}
+.wrap{
+    width: 90%;
+    margin: 0px auto;
 }
