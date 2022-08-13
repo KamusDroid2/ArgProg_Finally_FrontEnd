@@ -1,3 +1,4 @@
+
 .profile-image{
     position:static;
     width: 300px;
@@ -5,11 +6,9 @@
     background-image: url("/assets/img/fireprofile.png");
 }
 .row{
-    border-top: 15%;
+    margin-top: 20px;
     border-bottom: 15%;
-
-    border-radius: 20px;
-    
+    border-radius: 20px;    
     background-color:  rgba(26, 12, 223, 0.7);
 }
 h4{
