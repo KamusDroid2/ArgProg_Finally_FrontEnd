@@ -1,0 +1,123 @@
+body {
+    
+    }
+nav {
+    position: absolute;
+    width: 100%;
+    height: 12%;
+    padding: 20 px 20px;
+    box-sizing: border-box;
+    background-image: url("/assets/img/backflyer.png"); 
+    border-radius: 20px;
+}
+#logo{
+    float: left;
+    position:fixed;
+}
+#menu ul{
+    float: right;
+
+    height: 20px;
+    background: transparent;
+}
+#menu ul li{
+    font-size: 22px;
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+    letter-spacing: 1px;
+    color: azure;
+}
+#menu ul li a{
+    color: white;
+}
+
+#redes{
+    float: right;
+    width: 300px;
+    margin-top: 15px;
+    margin-right: 15px;
+
+}
+#logo{
+    width: 120px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#fb{
+    width: 50px;
+    border-radius: 8px;
+}
+
+/*header {
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+
+}
+
+
+.navbar-brand{
+    margin: 0 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    color: rgb(0, 0, 0);
+    margin-top: 0%;
+    margin-left: -5%;
+    font-size: 25px;
+}
+.navbar-brand:hover {
+    transition: 0.5s;
+    color: azure;
+
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+
+.menu-item {
+    margin: 0 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    color: azure;
+    margin-bottom: 8px;
+
+}
+
+.cta {
+    padding: 10px 24px;
+    border-radius: 15px;
+    background-color: var(--main-color);
+    color: rgb(157, 155, 155);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 8px;
+
+}
+
+.cta:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+}
+
+.menu-item:hover {
+    color: var(--main-color);
+
+}
+
+
+
+}*/

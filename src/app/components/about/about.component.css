@@ -1,17 +1,16 @@
-.profile-background{
-    width: 100%;
-}
 .profile-image{
+    position:static;
     width: 300px;
     border-radius: 200px;
+    background-image: url("/assets/img/fireprofile.png");
 }
 .row{
     border-top: 15%;
     border-bottom: 15%;
 
     border-radius: 20px;
-
-    background-color:  rgba(100, 12, 223, 0.7);
+    
+    background-color:  rgba(26, 12, 223, 0.7);
 }
 h4{
     color: azure;

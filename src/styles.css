@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+
+.font{
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+@font-face {
+    font-family: acme;
+    src: url(./assets/fonts/Acme/Acme-Regular.ttf);
+}
