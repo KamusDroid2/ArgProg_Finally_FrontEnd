@@ -1,0 +1,26 @@
+
+.itemscar {
+    max-width: 80%;
+    max-height: 100%;
+    position: relative;
+    border-radius: 20px;
+}
+
+.carousel {
+    margin-top: 5%;
+}
+
+.carousel-inner {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    max-width: 70%;
+    min-width: 40%;
+    text-align: center;
+}
+
+.carousel-item {
+    position: relative;
+    top: 50%;
+}

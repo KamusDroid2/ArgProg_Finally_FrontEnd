@@ -91,14 +91,14 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/slick-carousel/slick/slick.scss",
+              "node_modules/slick-carousel/slick/slick-theme.scss"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.js",
-              
-              "node_modules/@popperjs/core/dist/cjs/popper.js",
-              "node_modules/jquery/dist/jquery.js"
-              
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundlee.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js"                           
             ]
           }
         }
