@@ -1,19 +1,33 @@
-#nothing{
-    height: 110px;
-    width: 100%;
-    border: 10 px solid azure;
-}
-#banner{
+#banner {
+    display: block;
+    margin-top: 0%;
+    margin-bottom: 0%;
     width: auto;
     height: 100px;
-    border: 10 px solid azure;
+    border-radius: 20px;
     background: url("../../../assets/img/png4.png");
 }
-#banner h1{
+
+h1 {
     display: block;
-    width: 750px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    width: auto;
+    text-align: center;
+    font-family: acme;
+    font-size: 40px;
     color: azure;
-    letter-spacing: 2px;
+    letter-spacing: 20px;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+p {
+    font-family: acme;
+    border-right: 0px;
+    margin-top: 1px;
+    display: block;
+    width: auto;
+    text-align: center;
+    font-size: 30px;
+    color: azure;
+    letter-spacing: 15px;
 }
