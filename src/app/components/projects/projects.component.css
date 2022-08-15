@@ -1,26 +1,54 @@
-
-.itemscar {
-    max-width: 80%;
-    max-height: 100%;
-    position: relative;
+.row{
+    margin-top: 2.5%;
+    display: flex;
+    
+    background-color:rgba(12, 86, 223, 0.7);
+    border-radius: 10px;
+}
+.card{
+    width:auto;
+}
+#capa{
+    background-color: rgba(4, 46, 102, 0.7);
     border-radius: 20px;
 }
-
-.carousel {
-    margin-top: 5%;
+.card-img-top{
+    margin: 2%;
+    position:sticky;
+    width: 300px;
+    border-radius: 20px;
+    background-image: url("/assets/img/fireprofile.png");
+}
+div{
+    margin:2%;
+}
+#info-data{
+    text-align: left;
+    margin-left: 2%;
+    font-family: acme;
+    color: azure;
 }
 
-.carousel-inner {
-    position: relative;
-    margin-top: 5%;
-    margin-left: 15%;
-    margin-right: 15%;
-    max-width: 70%;
-    min-width: 40%;
-    text-align: center;
+#info-company{
+    color: azure;
+    font-family: acme;
+    font-size: 20px;
+}
+#info-contact{
+    color: azure;
+    font-family: acme;
+    font-size: 20px;
 }
 
-.carousel-item {
-    position: relative;
-    top: 50%;
+h2{
+    color: azure;
+    font-family: acme;
+}
+h1{
+    color: azure;
+    font-family: acme;
+}
+p{
+    color: azure;
+    font-family: acme;
 }

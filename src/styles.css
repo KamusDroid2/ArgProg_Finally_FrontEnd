@@ -8,9 +8,10 @@
 }
 
 body{
-    background: url("./assets/pictures/pattern8.jpg") fixed;
-    background-size: 100%;
+    background: url("./assets/pictures/pattern15.webp") fixed;
+    background-size: 100%;    
     position: relative;
+    
 }
 .wrap{
     width: 90%;

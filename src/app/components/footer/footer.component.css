@@ -1,0 +1,13 @@
+.row{
+    margin-top: 2.5%;
+    border-color: aqua;
+    background-color: black;
+
+}
+h1{
+    font-size: 20px;
+    font-family: acme;
+    color: azure;
+    text-align: center;
+    letter-spacing: 4px;
+}

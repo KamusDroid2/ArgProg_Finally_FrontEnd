@@ -12,6 +12,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +30,35 @@ import { BannerComponent } from './components/banner/banner.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({"backgroundGradient": true,
+    "backgroundColor": "#0d84bf",
+    "backgroundGradientStopColor": "#000000",
+    "backgroundOpacity": 0.2,
+    "backgroundPadding": 4,
+    "radius": 78,
+    "maxPercent": 100,
+    "unitsFontSize": "28",
+    "unitsFontWeight": "900",
+    "unitsColor": "#ffffff",
+    "outerStrokeGradient": true,
+    "outerStrokeWidth": 10,
+    "outerStrokeColor": "#9b64dd",
+    "outerStrokeGradientStopColor": "#00ff91",
+    "innerStrokeColor": "#95bee4",
+    "innerStrokeWidth": 0,
+    "titleColor": "#ffffff",
+    "titleFontSize": "29",
+    "titleFontWeight": "900",
+    "subtitleColor": "#ffffff",
+    "subtitleFontSize": "14",
+    "subtitleFontWeight": "900",
+    "animationDuration": 3600,
+    "showInnerStroke": false,
+    "responsive": true,
+    "startFromZero": false
+      })
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -52,3 +52,21 @@ p{
     color: azure;
     font-family: acme;
 }
+#redes{
+    float: center;
+    width: 300px;
+    margin-top: 15px;
+    
+
+}
+#logo{
+    width: 120px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#fb{
+    width: 50px;
+    border-radius: 8px;
+
+} 
