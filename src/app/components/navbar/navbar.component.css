@@ -7,6 +7,9 @@ header {
 }
 #capa{
     background-color: rgba(0, 140, 255, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 #logo{
     width:400px;
