@@ -17,8 +17,12 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import {HttpClient, HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
 import { ErrorComponent } from './components/error/error.component';
+import { interceptorProvider } from './service/interceptor-service';
+import { NewExperienceComponent } from './components/experience/new-experience.component';
+import { EditeducationComponent } from './components/education/editeducation.component';
+import { NeweducationComponent } from './components/education/neweducation.component';
+import { EditExperienceComponent } from './components/experience/edit-experience.component';
 
 
 @NgModule({
@@ -35,11 +39,17 @@ import { ErrorComponent } from './components/error/error.component';
     BannerComponent,
     HomeComponent,
     LoginComponent,
-    RegisterComponent,
-    ErrorComponent
+
+    ErrorComponent,
+    NewExperienceComponent,
+    EditeducationComponent,
+    NeweducationComponent,
+    EditExperienceComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    FormsModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({"backgroundGradient": true,
     "backgroundColor": "#0d84bf",
@@ -68,10 +78,12 @@ import { ErrorComponent } from './components/error/error.component';
     "responsive": true,
     "startFromZero": false
   }),
-     HttpClientModule
+
   ],
 
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

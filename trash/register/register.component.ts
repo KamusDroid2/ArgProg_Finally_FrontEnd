@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { persona } from '../../src/app/model/persona.model'
 
 @Component({
   selector: 'app-register',
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+  public page_title: string;
+  public persona!: persona;
 
-  constructor() { }
+  constructor() {
+    this.page_title = 'Registro';
+  }
 
   ngOnInit(): void {
   }

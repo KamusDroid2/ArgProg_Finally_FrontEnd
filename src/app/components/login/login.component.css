@@ -1,0 +1,102 @@
+.card-deck {
+    margin-top: 2.5%;
+    display: flex;
+    background-color: rgba(12, 86, 223, 0.7);
+    border-radius: 10px;
+    height: 100%;
+    align-content: center;
+    font-family: acme;
+    height: 30%;
+}
+
+.card {
+    height: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2%;
+    width: auto;
+    font-family: acme;
+
+}
+
+
+.social_icon span {
+    font-size: 60px;
+    margin-left: 10px;
+    color: #022673;
+}
+
+.social_icon span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.card-header {
+
+    margin-left: 5%;
+}
+
+.card-header h3 {
+
+
+    color: white;
+}
+
+
+.social_icon {
+    position: absolute;
+    right: 20px;
+    top: -45px;
+}
+
+.input-group-prepend span {
+    width: 50px;
+    background-color: #000a57;
+    color: black;
+    border: 0 !important;
+    font-family: acme;
+    margin-left: 5%;
+
+}
+
+input:focus {
+    outline: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
+    font-family: acme;
+
+
+}
+
+.remember {
+    color: white;
+}
+
+.remember input {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+    font-family: acme;
+
+}
+
+.login_btn {
+    color: rgb(255, 255, 255);
+    background-color: #001658;
+    width: 100px;
+    font-family: acme;
+
+}
+
+.login_btn:hover {
+    color: rgb(0, 132, 255);
+    background-color: rgb(66, 3, 255);
+}
+
+.links {
+    color: white;
+}
+
+.links a {
+    margin-left: 4px;
+}
