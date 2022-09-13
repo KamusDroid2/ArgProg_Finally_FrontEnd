@@ -13,7 +13,7 @@ export class EducationComponent implements OnInit {
   education: Education[] = [];
 
   constructor(private educationS: EducationService, private tokenService: TokenService) { }
-  isLogged = false;
+  isLogged = true;
 
   ngOnInit(): void {
     this.cargarEducation();

@@ -1,0 +1,23 @@
+<div class="card-deck">
+
+  <div class="container" *ngIf="experiencia">
+    <div class="row">
+      <div>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+          <div class="form-group">
+            <label for="nameE">Nombre del Empleo</label>
+            <input type="text" class="form-control" id="nameE" name="nameE" [(ngModel)]="experiencia.nameE" required>
+          </div>
+          <div class="form-group">
+            <label for="descriptionExp">Descripcion del Empleo</label>
+            <input type="text" class="form-control" id="descriptionExp" name="descriptionExp"
+              [(ngModel)]="experiencia.descriptionExp" required>
+          </div>
+          <button class="btn btn-primary">
+            Editar experiencia
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

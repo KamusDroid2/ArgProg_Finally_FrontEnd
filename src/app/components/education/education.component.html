@@ -16,7 +16,9 @@
                     <td>
                         <h2>{{Education.nameEd}}</h2>
                     </td>
-                    <td>{{Education.descriptionEd}}</td>
+                    <td>
+                      <h2>{{Education.descriptionEd}}</h2>
+                    </td>
                     <td *ngIf="isLogged">
                         <button class="btn btn-light" routerLink="/editedu/{{Education.id}}">
                             <i class="bi bi-pencil-fill"></i> EDITAR</button>

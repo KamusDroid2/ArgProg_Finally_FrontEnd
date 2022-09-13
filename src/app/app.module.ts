@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
-import { ExperienceComponent } from './components/experience/experience.component';
 import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
@@ -17,34 +15,31 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import {HttpClient, HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
-import { ErrorComponent } from './components/error/error.component';
 import { interceptorProvider } from './service/interceptor-service';
-import { NewExperienceComponent } from './components/experience/new-experience.component';
 import { EditeducationComponent } from './components/education/editeducation.component';
 import { NeweducationComponent } from './components/education/neweducation.component';
-import { EditExperienceComponent } from './components/experience/edit-experience.component';
-
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { NewexperienciaComponent } from './components/experiencia/newexperiencia.component';
+import { EditexperienciaComponent } from './components/experiencia/editexperiencia.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AboutComponent,
-    ExperienceComponent,
-    EducationComponent,
-    SkillsComponent,
-    ProjectsComponent,
-    FooterComponent,
+    HomeComponent,
     NavbarComponent,
     BannerComponent,
-    HomeComponent,
+    EducationComponent,
+    ExperienciaComponent,
+    SkillsComponent,
+    ProjectsComponent,
     LoginComponent,
-
-    ErrorComponent,
-    NewExperienceComponent,
     EditeducationComponent,
     NeweducationComponent,
-    EditExperienceComponent
+    NewexperienciaComponent,
+    EditexperienciaComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

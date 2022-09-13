@@ -1,7 +1,7 @@
 .card-deck{
     margin-top: 2.5%;
     display: flex;
-    
+
     background-color:rgba(12, 86, 223, 0.7);
     border-radius: 10px;
 }
@@ -17,7 +17,6 @@
     position:sticky;
     width: 300px;
     border-radius: 200px;
-    background-image: url("/assets/img/fireprofile.png");
 }
 div{
     margin:2%;
@@ -51,4 +50,8 @@ h1{
 p{
     color: azure;
     font-family: acme;
+}
+td{
+  color: azure;
+  font-family: acme;
 }
