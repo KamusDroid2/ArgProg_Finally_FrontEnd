@@ -1,20 +1,40 @@
 <header id="header">
 
-    <div id="logo">
-      <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"><img src="../assets/logos/favicon.ico" id="logoi"><h3>Argentina Programa</h3></a>
-    </div>
+  <div id="logo">
+    <a
+      href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"><img
+        src="../assets/logos/favicon.ico" id="icon">
+    </a>
+    <div><h3>Argentina Programa</h3></div>
+  </div>
+  <div id="menu">
     <nav id="menu">
       <ul>
-        <a [routerLink]="['']"><li class="menu-item">HOME</li></a>
-        <a [routerLink]="['/projects']"><li class="menu-item">PROYECTOS</li></a>
-        <a [routerLink]="['/education']"><li class="menu-item">FORMACION</li></a>
-        <a [routerLink]="['/experiencia']"><li class="menu-item">EXPERIENCIA</li></a>
+        <a [routerLink]="['']">
+          <li class="menu-item">HOME</li>
+        </a>
+        <a [routerLink]="['/projects']">
+          <li class="menu-item">PROYECTOS</li>
+        </a>
+        <a [routerLink]="['/education']">
+          <li class="menu-item">FORMACION</li>
+        </a>
+        <a [routerLink]="['/experiencia']">
+          <li class="menu-item">EXPERIENCIA</li>
+        </a>
         <!--<button type="button" class="btn" (click)="login()">LOGIN</button>
         <button type="button" class="btn" (click)="onLogOut()">LOGOUT</button>-->
-        <a [routerLink]="['/login']"><li class="cta" (click)="login()" *ngIf="!isLogged">LOGIN</li></a>
-        <a [routerLink]="['/login']"><li class="cta" (click)="onLogOut()" *ngIf="isLogged">LOGOUT</li></a>
+        <a [routerLink]="['/login']">
+          <li class="cta" (click)="login()" *ngIf="!isLogged">LOGIN</li>
+        </a>
+        <a [routerLink]="['/login']">
+          <li class="cta" (click)="onLogOut()" *ngIf="isLogged">LOGOUT</li>
+        </a>
       </ul>
     </nav>
+    <div class="clearfix"></div>
+
+  </div>
 
 
 

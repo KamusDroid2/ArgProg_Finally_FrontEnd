@@ -1,3 +1,8 @@
+.clearfix {
+    float: none;
+    clear: both;
+}
+
 header {
     height: 120px;
     width: 100%;
@@ -7,47 +12,51 @@ header {
 }
 
 #logo{
-    width:400px;
-    float:left;
+    width:40%;    
     cursor:pointer;
     transition:all 300ms ;
     margin-top: 20px;
 }
-#logoi {
+#icon {
     margin-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
     width: 80px;
+    display: flex;
 }
 #logo h3{
-    float: right;
+    display: flex;
+    float: left;
     font-family: acme;
     color: azure;
     font-size: 35px;
     text-align: center;
-    margin-top: 17px;
+    margin-left: 5%;
+    margin-top: 30px;
     transition: all 300ms;
 }
 #logo h3:hover{
     color: rgb(156, 193, 241);
 }
-
-nav {
-    
-    margin-right: 0%;
-    float: right;
-    
-
+#logo a{
+    float: left;
 }
 
+
+
 #menu {
-    
     font-size: 18px;
-    margin-right: 0px;
+    margin-right: 1%;
+    margin-left: 1%;
     float: right;
-    letter-spacing: 1px;
     color: azure;
     background: transparent;
     font-family: acme;
     
+}
+
+#menu ul{
+    width:100%;
 }
 
 #menu ul li {
@@ -62,13 +71,14 @@ nav {
 }
 
 .menu-item {
-    margin: 0 1rem;
-    font-weight: 600;
+    margin: 1%;
     cursor: pointer;
     transition: 0.5s;
     color: azure;
     margin-bottom: 8px;
-
+}
+.menu-item:hover {
+    color:rgb(126, 126, 171);
 }
 
 .cta {
@@ -89,6 +99,38 @@ nav {
     border-radius: 40px;
 }
 
-.menu-item:hover {
-    color:rgb(126, 126, 171);
+@media (max-width: 980px){
+    #icon{
+        margin-top: 28%;
+        width: 61px;
+    }
+    #logo h3{
+        margin-top: 40px;
+        font-size: 24px;
+        display: flex;
+    }
+}
+
+@media (max-width: 774px){
+    #logo h3{
+        font-size: 0px;
+    }
+    #icon{
+        margin-top: 10%;
+        width: 100px;
+        margin-left: 34%;
+    }
+
+@media (max-width: 610px){
+    #icon{
+        width: 0px;
+    }
+    #logo{
+        width: 0%;
+    }
+    #menu{
+        width:100%;
+        float: left;
+    }
+}
 }

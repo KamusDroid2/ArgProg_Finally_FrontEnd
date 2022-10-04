@@ -1,46 +1,43 @@
+.clearfix{
+    float: none;
+    clear: both;
+}
 .row{
+    background-color:rgba(12, 86, 223, 0.7);
     margin-top: 2.5%;
+    min-height: auto;
+    display: flex;    
+    border-radius: 10px;
+    margin: 2%;
+}
+.title{
+    margin-bottom: 1%;
+}
+#articles article{
+    width:80%;
+    height: auto;
+    float: none;
+    text-align: center;
+    margin: 2%;
     display: flex;
     
-    background-color:rgba(12, 86, 223, 0.7);
-    border-radius: 10px;
 }
-.card{
-    width:auto;
+.body{
+    margin: 2px;
 }
-.card-img-top1{
+
+.img-top1{
     margin: 2%;
     position:sticky;
     width: 300px;
-    border-radius: 200px;
-    
+    border-radius: 200px;    
 }
-.card-img-top{
+
+.img-top{
     margin: 2%;
     position:sticky;
     width: 300px;
     border-radius: 20px;
-    
-}
-div{
-    margin:2%;
-}
-#info-data{
-    text-align: left;
-    margin-left: 2%;
-    font-family: acme;
-    color: azure;
-}
-
-#info-company{
-    color: azure;
-    font-family: acme;
-    font-size: 20px;
-}
-#info-contact{
-    color: azure;
-    font-family: acme;
-    font-size: 20px;
 }
 
 h2{
@@ -54,4 +51,15 @@ h1{
 p{
     color: azure;
     font-family: acme;
+}
+@media (max-width:666px){
+    .row{
+        display: block;
+    }
+    .img-top{
+        width: 100px;
+    }
+    .img-top1{
+        width: 100px;
+    }
 }
