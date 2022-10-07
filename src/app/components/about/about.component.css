@@ -1,9 +1,10 @@
 .card-deck{
     margin-top: 2.5%;
-    display: flex;
-    
+    margin-bottom: 2.5%;
+    display: flex;    
     background-color:rgba(12, 86, 223, 0.7);
     border-radius: 10px;
+
 }
 .card{
     width:auto;
@@ -50,6 +51,7 @@ h3{
 p{
     color: azure;
     font-family: acme;
+    margin-top: 5%;
 }
 #redes{
     float: center;
@@ -76,6 +78,8 @@ p{
     }
     .card-img-top{
         width: 200px;
+        margin-top: 5%;
+        margin-left: 15%;
     }
      
 }

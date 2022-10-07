@@ -43,10 +43,16 @@ p {
     letter-spacing: 15px;
 }
 @media(max-width:666px){
-    h1{
+    h1{        
         font-size: 20px;
-    }
+        display: inline-block;
+        text-align: center;
+        margin-top: 2%;
+        margin-left: 3%;
+        }
     p{
         font-size: 20px;
+        margin-top: 2%;
+        margin-left: 3%;
     }
 }

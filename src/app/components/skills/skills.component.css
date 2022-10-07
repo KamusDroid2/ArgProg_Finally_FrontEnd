@@ -1,17 +1,13 @@
 .row{
     margin-top: 2.5%;
-    display: flex;
-    
+    display: flex;    
     background-color:rgba(12, 86, 223, 0.7);
     border-radius: 10px;
 }
 .card{
     width:auto;
 }
-#capa{
-    background-color: rgba(4, 46, 102, 0.7);
-    border-radius: 20px;
-}
+
 .card-img-top{
     margin: 2%;
     position:sticky;
@@ -45,10 +41,24 @@ h2{
     font-family: acme;
 }
 h1{
+    margin-left: 3%;
     color: azure;
     font-family: acme;
 }
 p{
     color: azure;
     font-family: acme;
+}
+@media (max-widht:666px){
+    h1 {
+        margin-left: 5%;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        color: azure;
+        font-family: acme;
+    }
+    h2 {
+        color: azure;
+        font-family: acme;
+    }
 }
