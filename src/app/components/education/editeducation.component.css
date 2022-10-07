@@ -1,66 +1,52 @@
-.card-deck{
+.card-deck {
   margin-top: 2.5%;
   display: flex;
-
-  background-color:rgba(12, 86, 223, 0.7);
+  background-color: rgba(12, 86, 223, 0.7);
   border-radius: 10px;
 }
-.card{
-  width:auto;
+
+.card {
+  width: auto;
 }
-#capa{
-  background-color: rgba(4, 46, 102, 0.7);
-  border-radius: 20px;
-}
-.card-img-top{
+
+div {
   margin: 2%;
-  position:sticky;
-  width: 300px;
-  border-radius: 200px;
-}
-div{
-  margin:2%;
-}
-#info-data{
-  text-align: left;
-  margin-left: 2%;
-  font-family: acme;
-  color: azure;
 }
 
-.list-group-item{
+h2 {
+  margin-left: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   color: azure;
   font-family: acme;
-  font-size: 20px;
-}
-#info-contact{
-  color: azure;
-  font-family: acme;
-  font-size: 20px;
 }
 
-h2{
+h1 {
+  margin-left: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   color: azure;
   font-family: acme;
 }
-h1{
-  color: azure;
-  font-family: acme;
-}
-p{
-  color: azure;
-  font-family: acme;
-}
-td{
-color: azure;
-font-family: acme;
-}
+
 @media (max-width: 666px) {
-  .card-deck{
-      
-      display: block;
+  .card-deck {
+    display: block;
   }
-  .card-img-top{
-      width: 200px;
+
+  h2 {
+    margin-left: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: azure;
+    font-family: acme;
+  }
+
+  h1 {
+    margin-left: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: azure;
+    font-family: acme;
   }
 }
