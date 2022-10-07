@@ -1,25 +1,16 @@
 .card-deck{
   margin-top: 2.5%;
   display: flex;
+
   background-color:rgba(12, 86, 223, 0.7);
   border-radius: 10px;
 }
 .card{
   width:auto;
 }
-#capa{
-  background-color: rgba(4, 46, 102, 0.7);
-  border-radius: 20px;
-}
 
 div{
   margin:2%;
-}
-.row{
-  text-align: left;
-  margin-left: 2%;
-  font-family: acme;
-  color: azure;
 }
 
 h2{
@@ -37,4 +28,14 @@ p{
 td{
 color: azure;
 font-family: acme;
+}
+
+@media (max-width: 666px) {
+  .card-deck{
+      
+      display: block;
+  }
+  .card-img-top{
+      width: 200px;
+  }
 }

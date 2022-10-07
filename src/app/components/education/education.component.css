@@ -55,3 +55,12 @@ td{
   color: azure;
   font-family: acme;
 }
+@media (max-width: 666px) {
+    .card-deck{
+        
+        display: block;
+    }
+    .card-img-top{
+        width: 200px;
+    }
+  }

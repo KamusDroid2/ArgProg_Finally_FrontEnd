@@ -1,23 +1,13 @@
-.card-deck {
+.card-deck{
     margin-top: 2.5%;
     display: flex;
-    background-color: rgba(12, 86, 223, 0.7);
+  
+    background-color:rgba(12, 86, 223, 0.7);
     border-radius: 10px;
-    height: 100%;
-    align-content: center;
-    font-family: acme;
-    height: 30%;
-}
-
-.card {
-    height: 40%;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 2%;
-    width: auto;
-    font-family: acme;
-
-}
+  }
+  .card{
+    width:auto;
+  }
 
 
 .social_icon span {
@@ -100,3 +90,12 @@ input:focus {
 .links a {
     margin-left: 4px;
 }
+@media (max-width: 666px) {
+    .card-deck{
+        
+        display: block;
+    }
+    .card-img-top{
+        width: 200px;
+    }
+  }
