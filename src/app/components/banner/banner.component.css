@@ -45,14 +45,13 @@ p {
 @media(max-width:666px){
     h1{        
         font-size: 20px;
-        display: inline-block;
+        display: block;
         text-align: center;
         margin-top: 2%;
-        margin-left: 3%;
+
         }
     p{
         font-size: 20px;
         margin-top: 2%;
-        margin-left: 3%;
     }
 }

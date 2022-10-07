@@ -114,7 +114,7 @@ header {
     }
 }
 
-@media (max-width: 774px){
+@media (max-width: 805px){
     #logo h3{
         font-size: 0px;
     }
@@ -124,7 +124,7 @@ header {
         margin-left: 34%;
     }
 
-@media (max-width: 610px){
+@media (max-width: 641px){
     #icon{
         width: 0px;
     }
