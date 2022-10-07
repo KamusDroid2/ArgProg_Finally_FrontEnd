@@ -1,13 +1,18 @@
-.card-deck{
+.card-deck {
     margin-top: 2.5%;
     display: flex;
-  
-    background-color:rgba(12, 86, 223, 0.7);
+
+    background-color: rgba(12, 86, 223, 0.7);
     border-radius: 10px;
-  }
-  .card{
-    width:auto;
-  }
+}
+
+.card {
+    width: auto;
+}
+
+.card-body {
+    margin-left: 5%;
+}
 
 
 .social_icon span {
@@ -90,12 +95,14 @@ input:focus {
 .links a {
     margin-left: 4px;
 }
+
 @media (max-width: 666px) {
-    .card-deck{
-        
+    .card-deck {
+
         display: block;
     }
-    .card-img-top{
+
+    .card-img-top {
         width: 200px;
     }
-  }
+}

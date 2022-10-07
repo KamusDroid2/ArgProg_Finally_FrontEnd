@@ -118,28 +118,24 @@ header {
     #logo h3{
         font-size: 0px;
     }
-    #icon{
-        margin-top: 10%;
-        width: 100px;
-        margin-left: 34%;
-    }
 
-@media (max-width: 641px){
-    #icon{
-        width: 0px;
-    }
     #logo{
-        width: 0%;
+     width: 3%;
+     margin-left: 2%;
+     margin-right: 0%;
+     margin-bottom: 10%;
+     display: inline-block;
     }
+  
     #menu{
-        width:100%;        
+        width:92%;   
+        display: inline-block;     
     }
     #menu ul li {
         font-size: 14px;
         display: inline-block;
         margin-top: 3%;
-        margin-right: 3%;
+        margin-right: 0.5%;
       
     }
-}
 }
