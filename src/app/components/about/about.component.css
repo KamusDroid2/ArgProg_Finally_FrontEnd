@@ -1,7 +1,7 @@
 .card-deck{
     margin-top: 2.5%;
     margin-bottom: 2.5%;
-    display: flex;    
+    /**display: flex;    **/
     background-color:rgba(12, 86, 223, 0.7);
     border-radius: 10px;
 
@@ -33,6 +33,7 @@ div{
     color: azure;
     font-family: acme;
     font-size: 20px;
+    margin-bottom: 0px;
 }
 #info-contact{
     color: azure;
@@ -72,8 +73,7 @@ p{
 
 } 
 @media (max-width: 666px) {
-    .card-deck{
-        
+    .card-deck{        
         display: block;
     }
     .card-img-top{
