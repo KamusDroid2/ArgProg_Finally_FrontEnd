@@ -1,13 +1,14 @@
 .card-deck{
     margin-top: 2.5%;
     margin-bottom: 2.5%;
-    /**display: flex;    **/
+    display: grid;
     background-color:rgba(12, 86, 223, 0.7);
     border-radius: 10px;
 
 }
 .card{
     width:auto;
+    display: flow-root;
 }
 #capa{
     background-color: rgba(4, 46, 102, 0.7);

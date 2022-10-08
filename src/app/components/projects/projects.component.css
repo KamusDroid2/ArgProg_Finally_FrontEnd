@@ -9,7 +9,7 @@
     background-color:rgba(12, 86, 223, 0.7);
     margin-top: 2.5%;
     min-height: auto;
-    display: flex;    
+    display: inline-block;    
     border-radius: 10px;
     margin: 2%;
 }
