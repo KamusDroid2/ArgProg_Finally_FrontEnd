@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { ModuleWithProviders } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
+import { EditAboutComponent } from './components/about/edit-about.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
@@ -12,7 +13,6 @@ import { EditeducationComponent } from './components/education/editeducation.com
 import { NeweducationComponent } from './components/education/neweducation.component';
 import { NewexperienciaComponent } from './components/experiencia/newexperiencia.component';
 import { EditexperienciaComponent } from './components/experiencia/editexperiencia.component';
-import { EditAboutComponent } from './components/about/edit-about.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},

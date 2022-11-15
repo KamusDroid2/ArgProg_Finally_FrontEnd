@@ -8,7 +8,10 @@
 .card {
   width: auto;
 }
-
+.form-group {
+  color: azure;
+  font-family: acme;
+}
 div {
   margin: 2%;
 }
