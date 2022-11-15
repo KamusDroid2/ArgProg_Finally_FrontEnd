@@ -21,6 +21,10 @@ import { NeweducationComponent } from './components/education/neweducation.compo
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { NewexperienciaComponent } from './components/experiencia/newexperiencia.component';
 import { EditexperienciaComponent } from './components/experiencia/editexperiencia.component';
+import { EditAboutComponent } from './components/about/edit-about.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,8 @@ import { EditexperienciaComponent } from './components/experiencia/editexperienc
     NeweducationComponent,
     NewexperienciaComponent,
     EditexperienciaComponent,
-    FooterComponent
+    FooterComponent,
+    EditAboutComponent
   ],
   imports: [
     BrowserModule,
@@ -73,6 +78,8 @@ import { EditexperienciaComponent } from './components/experiencia/editexperienc
     "responsive": true,
     "startFromZero": false
   }),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage()),
 
   ],
 

@@ -12,10 +12,12 @@ import { EditeducationComponent } from './components/education/editeducation.com
 import { NeweducationComponent } from './components/education/neweducation.component';
 import { NewexperienciaComponent } from './components/experiencia/newexperiencia.component';
 import { EditexperienciaComponent } from './components/experiencia/editexperiencia.component';
+import { EditAboutComponent } from './components/about/edit-about.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
   {path:'about', component: AboutComponent},
+  {path:'editabout/:id', component: EditAboutComponent},
   {path:'login', component: LoginComponent},
   {path:'education', component: EducationComponent},
   {path:'experiencia', component: ExperienciaComponent},

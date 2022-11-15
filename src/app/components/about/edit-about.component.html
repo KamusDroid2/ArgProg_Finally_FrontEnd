@@ -1,0 +1,36 @@
+<div class="card-deck">
+
+    <div class="container" *ngIf="persona">
+      <div class="row">
+        <div>
+          <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" class="form-control" id="name" name="name" [(ngModel)]="persona.name" required>
+            </div>
+            <div class="form-group">
+                <label for="surname">Apellido</label>
+                <input type="text" class="form-control" id="surname" name="surname" [(ngModel)]="persona.surname" required>
+              </div>
+            <div class="form-group">
+              <label for="description">Descripcion</label>
+              <input type="text" class="form-control" id="description" name="description"
+                [(ngModel)]="persona.description" required>
+            </div>
+            <div class="form-group">
+                <label for="img">Imagen</label>
+                <input type="text" class="form-control" id="img" name="img" [(ngModel)]="persona.img" (change)="upImage($event)" accept=".jpg, .bmp, .tif">
+            </div>
+            <br>
+            <div class="image">
+              <img [src]="upImgService.url" width="200px">
+            </div>
+            <button class="btn btn-primary">
+              Editar Persona
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  

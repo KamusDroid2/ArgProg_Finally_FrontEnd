@@ -1,6 +1,7 @@
 <div class="card-deck">
     <div class="card">
-        <img class="card-img-top" src="../assets/img/yo.jpg" alt="Card image cap">
+       
+        <img class="card-img-top" src={{persona.img}} alt="Card image cap">
         <div class="card-body">
             <h2 class="card-title">{{persona.name}} {{persona.surname}}</h2>
         </div>
@@ -8,7 +9,7 @@
             <div id="info-contact">Developer Fullstack JR. en TENGU</div>
             <div id="info-contact">
                 <span>Macachín, Atreucó, La Pampa, Argentina</span>
-             
+  
 
     </div>
 
@@ -30,28 +31,14 @@
             </div>
         </div>
         <div>
-            <p id="text-acercade">Bienvenido a mi portafolio! Soy Matías estudiante de Ingeniería en Computación y Desarrollo Web y de Software. Por mucho tiempo me he dedicado a estudiar informatica de forma autodidacta, mientras me dedicaba a otros rubros, como la gastronomía y el Arte y Diseño, el Cultivo, y la Feliz tarea de ser Padre.
+            <p id="text-acercade">{{persona.description}}<!--Bienvenido a mi portafolio! Soy Matías estudiante de Ingeniería en Computación y Desarrollo Web y de Software. Por mucho tiempo me he dedicado a estudiar informatica de forma autodidacta, mientras me dedicaba a otros rubros, como la gastronomía y el Arte y Diseño, el Cultivo, y la Feliz tarea de ser Padre.
                 En el útimo tiempo y gracias a los avances tecnológicos que impulsó el aislamiento por la pandemia de covid-19, comencé mis estudios formales via online, encontrando en el camino el programa "Argentina Programa", teniendo como trabajo final esta web SPA.
-                En esta página podrás encontrar diferentes datos sobre mi persona, entre ellas, mi educación, mis experiencias laborales, mis proyectos actuales, mis redes sociales y mis datos de contacto.</p>
+                En esta página podrás encontrar diferentes datos sobre mi persona, entre ellas, mi educación, mis experiencias laborales, mis proyectos actuales, mis redes sociales y mis datos de contacto.--></p>
         </div>
-        <div>
-            <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
-        </div>
+        <div class="col-lg-2">
+            <button type="button" class="btn btn-dark" routerLink="/editabout/1" *ngIf="isLogged">
+             Editar
+            </button>
+        </div>   
     </div>
-    <!--<div class="card">
-        <div class="card-titles">
-            <h2>Acerca de</h2>
-            <div class="btn-edit" onclick="cambiar_parrafo()">
-                <a href="#" class="btn-right">
-                    <i class="fa fa-pen"></i>
-                </a>
-            </div>
-        </div>
-        <div>
-            <p id="text-acercade">Desarrollador Web, Ilustrador, Maestro pizzero, Brew Master</p>
-        </div>
-        <div>
-            <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
-        </div>-->
-
 </div>
