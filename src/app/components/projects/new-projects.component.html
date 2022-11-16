@@ -1,0 +1,31 @@
+<div class="card-deck">
+    <div class="container">
+      <div class="row">
+        <div>
+          <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+            <div class="form-group">
+              <label for="name">Nombre del Proyecto</label>
+              <input type="text" class="form-control" id="project" name="project" [(ngModel)]="project" required>
+            </div>
+            <div class="form-group">
+              <label for="description">Descripcion</label>
+              <input type="text" class="form-control" id="description" name="description"
+                [(ngModel)]="description" required>
+            </div>
+            <div class="form-group">
+                <label for="imgP">Imagen</label>
+                <input type="file" class="form-control" id="imgP" name="imgP" [(ngModel)]="img" (change)="upImageP($event)" accept=".jpg, .bmp, .tif">
+            </div>
+            <br>
+            <div class="image">
+              <img [src]="upImgPService.url" width="200px">
+            </div>
+            <button class="btn btn-primary">
+              Agregar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  

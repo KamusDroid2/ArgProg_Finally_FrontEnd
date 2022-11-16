@@ -1,45 +1,28 @@
-<div class="row">
+<div class="row" *ngIf="projects">
     <h1 class="title">Proyectos</h1>
-    <div class="card-deck">
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/newprojects" *ngIf="isLogged">
+            Agregar Proyecto
+        </button>
+    </div>
+    <div class="card-deck" *ngFor="let Projects of projects">
         <section id="articles">
-            <article>
-                <a href="https://www.facebook.com/profile.php?id=100060583685420"><img
-                        src="../../../assets/pictures/Nishikai.jpg" class="img-top1" alt="..."></a>
+            <article >
+                <a><img src={{Projects.img}} class="img-top1" alt="..."></a>
                 <div class="body">
-                    <h2 class="title">Tenshi Ryu Nishi Kai - Ninpo Budo</h2>
-                    <p class="text">Escuela de Shinobi-Jutsu. Creada por mi Sensei Isao Nishi Sama. Y Dirigida por el
-                        Soke Alejandro Ramirez.
-                        Dirijo la Escuela en la Provincia de La Pampa.</p>
+                    <h2 class="title">{{Projects.project}}</h2>
+                    <p class="text">{{Projects.description}}</p>
                 </div>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-light" routerLink="/editprojects/{{Projects.id}}">
+                        <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                </td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-danger" (click)="delete(Projects.id)">
+                        <i class="bi bi-trash-fill"></i> BORRAR</button>
+                </td>
             </article>
-            
-            <article>
-
-                <a href="https://www.facebook.com/Geltoki.Macachin"><img src="../../../assets/pictures/geltoki.jpg"
-                        class="img-top" alt="..."></a>
-                <div class="body">
-                    <h2 class="title">Geltoki</h2>
-                    <p class="text">Resto Bar Cafetería. Es un antiguo buffet de la Terminal de Omnibus de la localidad
-                        de Macachín. Dónde intento darle una alternativa gastronómica a los mas de 5000 habitantes del
-                        pueblo.
-                        Podrás encontrar ricas recetas Gourmet, asi como Pizzas Caseras a la piedra, O la especial
-                        Bondiolita de cerdo a la cerveza!!!
-                    </p>
-                </div>
-            </article>
-
-            <article>
-                <a href="https://www.facebook.com/TENGU-108100075289030"><img src="../../../assets/pictures/tengu.jpg"
-                        class="img-top" alt="..."></a>
-                <div class="body">
-                    <h2 class="title">TENGU</h2>
-                    <p class="text">Página de contacto, para redes sociales, donde me desempeño como Desarrollador Web,
-                        Soporte técnico, y Diseño.
-                        Entre otras cosas.
-                    </p>
-                </div>
-            </article>
+                       
         </section>
-        <div class="cleafix"></div>
     </div>
 </div>

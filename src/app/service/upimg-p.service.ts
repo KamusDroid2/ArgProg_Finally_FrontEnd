@@ -4,13 +4,13 @@ import { getExperimentalSetting } from '@firebase/util';
 @Injectable({
   providedIn: 'root'
 })
-export class UpImgService {
+export class UpImgPService {
   url: string = "";
 
   constructor(private storage: Storage) { }
-  public upImage($event: any, name: string) {
+  public upImageP($event: any, name: string) {
     const file = $event.target.files[0]
-    const imgRef = ref(this.storage, `img/` + name)
+    const imgRef = ref(this.storage, `imgP/` + name)
     uploadBytes(imgRef, file)
       .then(response => { this.getImage() })
       .catch(error => console.log(error)
@@ -18,7 +18,7 @@ export class UpImgService {
   }
 
   getImage() {
-    const imageRef = ref(this.storage, 'img')
+    const imageRef = ref(this.storage, 'imgP')
     list(imageRef)
     .then(async response => {
        for(let item of response.items){

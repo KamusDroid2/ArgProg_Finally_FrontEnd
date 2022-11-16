@@ -43,9 +43,8 @@ export class EditAboutComponent implements OnInit {
   }
   upImage($event:any){
     const id = this.activatedRouter.snapshot.params['id'];
-    const name ="user_" + id;
+    const name ="user" + id;
     this.upImgService.upImage($event, name)
-
   }
 
 }

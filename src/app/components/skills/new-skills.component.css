@@ -1,0 +1,56 @@
+.card-deck {
+    margin-top: 2.5%;
+    display: flex;
+    background-color: rgba(12, 86, 223, 0.7);
+    border-radius: 10px;
+  }
+  
+  .card {
+    width: auto;
+  }
+  .form-group {
+    color: azure;
+    font-family: acme;
+  }
+  
+  div {
+    margin: 2%;
+  }
+  
+  h2 {
+    margin-left: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: azure;
+    font-family: acme;
+  }
+  
+  h1 {
+    margin-left: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: azure;
+    font-family: acme;
+  }
+  
+  @media (max-width: 666px) {
+    .card-deck {
+      display: block;
+    }
+  
+    h2 {
+      margin-left: 5px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      color: azure;
+      font-family: acme;
+    }
+  
+    h1 {
+      margin-left: 5px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      color: azure;
+      font-family: acme;
+    }
+  }

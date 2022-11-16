@@ -1,23 +1,26 @@
 <div class="row row-cols-1 row-cols-md-3 g-4">
     <h1>Skills</h1>
-    <div>
-        <circle-progress [percent]="65" [imageSrc]="'../../../assets/skills/ts.png'" [showImage]="true"
-            [imageWidth]="100" [imageHeight]="100"></circle-progress>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/newskill" *ngIf="isLogged">
+            Agregar Skill
+        </button>
     </div>
-    <div>
-        <circle-progress [percent]="70" [imageSrc]="'../../../assets/skills/ng.png'" [showImage]="true"
-            [imageWidth]="100" [imageHeight]="100"></circle-progress>
+    <div  *ngFor="let skills of skills">
+        <circle-progress [percent]="(skills.porcen)" 
+        [imageSrc]="''" 
+        [title]="(skills.name)"
+        [showTitle]="true"
+        [showImage]="false"
+        [imageWidth]="100" [imageHeight]="100">
+        </circle-progress>
+        <td *ngIf="isLogged">
+            <button class="btn btn-light" routerLink="/editskills/{{skills.id}}">
+                <i class="bi bi-pencil-fill"></i> EDITAR</button>
+        </td>
+        <td *ngIf="isLogged">
+            <button class="btn btn-danger" (click)="delete(skills.id)">
+                <i class="bi bi-trash-fill"></i> BORRAR</button>
+        </td>
     </div>
-    <div>
-        <circle-progress [percent]="78" [imageSrc]="'../../../assets/skills/ndjs.png'" [showImage]="true"
-            [imageWidth]="100" [imageHeight]="100"></circle-progress>
-    </div>
-    <div>
-        <circle-progress [percent]="100" [imageSrc]="'../../../assets/skills/jshtmlcss.png'" [showImage]="true"
-            [imageWidth]="100" [imageHeight]="100"></circle-progress>
-    </div>
-    <div>
-        <circle-progress [percent]="64" [imageSrc]="'../../../assets/skills/bts.png'" [showImage]="true"
-            [imageWidth]="100" [imageHeight]="100"></circle-progress>
-    </div>
+    
 </div>
