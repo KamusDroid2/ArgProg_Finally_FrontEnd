@@ -9,6 +9,7 @@
     background-color:rgba(12, 86, 223, 0.7);
     margin-top: 2.5%;
     min-height: auto;
+    min-width: 90%;
     display: inline-block;    
     border-radius: 10px;
     margin: 2%;
@@ -29,12 +30,6 @@
     margin: 2px;
 }
 
-.img-top1{
-    margin: 2%;
-    position:sticky;
-    width: 300px;
-    border-radius: 200px;    
-}
 
 .img-top{
     margin: 2%;

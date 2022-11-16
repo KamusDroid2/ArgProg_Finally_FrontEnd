@@ -11,6 +11,7 @@ import { UpImgPService } from 'src/app/service/upimg-p.service';
   styleUrls: ['./new-projects.component.css']
 })
 export class NewProjectsComponent implements OnInit {
+  projects: Projects = null;
   project!: string;
   description!: string;
   img!: string;
@@ -33,7 +34,7 @@ export class NewProjectsComponent implements OnInit {
       }
     )
   }
-
+  
   upImageP($event: any) {
     const id = this.activatedRouter.snapshot.params['id'];
     const name = "project" + id;
@@ -41,6 +42,3 @@ export class NewProjectsComponent implements OnInit {
   }
 
 }
-
-
-
