@@ -8,19 +8,24 @@
     <div class="card-deck" *ngFor="let Projects of projects">
         <section id="articles">
             <article >
-                <a><img src={{Projects.img}} class="img-top1" alt="..."></a>
-                <div class="body">
-                    <h2 class="title">{{Projects.project}}</h2>
-                    <p class="text">{{Projects.description}}</p>
+                <div class="card">
+                    <img class="card-img-top" src={{Projects.img}} alt="Card image cap">
+                    <div class="card-body">
+                        <h2 class="card-title">{{Projects.project}}</h2>
+                    </div>
+                    <div>
+                        <p id="text-acercade">{{Projects.description}}</p>
+                    </div>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editprojects/{{Projects.id}}">
+                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Projects.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
+            
                 </div>
-                <td *ngIf="isLogged">
-                    <button class="btn btn-light" routerLink="/editprojects/{{Projects.id}}">
-                        <i class="bi bi-pencil-fill"></i> EDITAR</button>
-                </td>
-                <td *ngIf="isLogged">
-                    <button class="btn btn-danger" (click)="delete(Projects.id)">
-                        <i class="bi bi-trash-fill"></i> BORRAR</button>
-                </td>
             </article>
                        
         </section>
