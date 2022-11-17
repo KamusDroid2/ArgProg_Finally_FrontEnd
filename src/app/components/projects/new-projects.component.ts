@@ -24,8 +24,8 @@ export class NewProjectsComponent implements OnInit {
   ngOnInit(): void {}
   onCreate(): void {
 
+
     const projects = new Projects(this.project, this.description, this.img);
-    this.projects.img = this.upImgPService.url
     this.projectsS.save(projects).subscribe(
       data => {
         alert("Proyecto añadido correctamente");
