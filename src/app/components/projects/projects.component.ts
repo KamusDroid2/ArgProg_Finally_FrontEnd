@@ -24,6 +24,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   cargarProjects(): void{
+
     this.projectsS.lista().subscribe(
       data =>{
         this.projects = data;
