@@ -10,16 +10,16 @@ export class UpImgPService {
   constructor(private storage: Storage) { }
   public upImageP($event: any, name: string) {
     const file = $event.target.files[0]
-    const imgRefP = ref(this.storage, `imgP/` + name)
-    uploadBytes(imgRefP, file)
+    const imgRef = ref(this.storage, `imgP/` + name)
+    uploadBytes(imgRef, file)
       .then(response => { this.getImage() })
       .catch(error => console.log(error)
       )
   }
 
   getImage() {
-    const imageRefP = ref(this.storage, 'imgP')
-    list(imageRefP)
+    const imageRef = ref(this.storage, 'imgP')
+    list(imageRef)
     .then(async response => {
        for(let item of response.items){
          this.url = await getDownloadURL(item);

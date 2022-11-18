@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Projects } from 'src/app/model/projects';
 import { ProjectsService } from 'src/app/service/projects.service';
-import { UpImgService } from 'src/app/service/up-img.service';
 import { UpImgPService } from 'src/app/service/upimg-p.service';
 
 @Component({
@@ -14,16 +13,17 @@ export class NewProjectsComponent implements OnInit {
   project!: string;
   description!: string;
   img!: string;
+  
 
-  constructor(private projectsS: ProjectsService,
-    private router: Router,
+  constructor(
+    private projectsS: ProjectsService,
     private activatedRouter: ActivatedRoute,
+    private router: Router,
     public upImgPService: UpImgPService) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {} 
   onCreate(): void {
     const projects = new Projects(this.project, this.description, this.img);
-    const id = this.activatedRouter.snapshot.params['id'];
     this.projectsS.save(projects).subscribe(
       data => {
         alert("Proyecto añadido correctamente");

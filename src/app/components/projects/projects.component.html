@@ -1,34 +1,38 @@
-<div class="row" *ngIf="projects">
-    <h1 class="title">Proyectos</h1>
-    <div class="col-lg-2">
-        <button type="button" class="btn btn-dark" routerLink="/newprojects" *ngIf="isLogged">
-            Agregar Proyecto
-        </button>
-    </div>
-    <div class="card-deck" *ngFor="let Projects of projects">
-        <section id="articles">
-            <article >
-                <div class="card">
-                    <div>
-                    <img class="card-img-top" src={{Projects.img}} alt=""></div>
-                    <div class="card-body">
-                        <h2 class="card-title">{{Projects.project}}</h2>
+<div class="container" *ngIf="projects">
+
+    <div class="row">
+        <h1 class="title">Proyectos</h1>
+        <div class="col-lg-2">
+            <button type="button" class="btn btn-dark" routerLink="/newprojects" *ngIf="isLogged">
+                Agregar Proyecto
+            </button>
+        </div>
+        <div class="card-deck" *ngFor="let Projects of projects">
+            <section id="articles">
+                <article>
+                    <div class="card">
+                        <div>
+                            <img class="card-img-top" src={{Projects.img}} alt="">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">{{Projects.project}}</h2>
+                        </div>
+                        <div>
+                            <p id="text-acercade">{{Projects.description}}</p>
+                        </div>
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-light" routerLink="/editprojects/{{Projects.id}}">
+                                <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                        </td>
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-danger" (click)="delete(Projects.id)">
+                                <i class="bi bi-trash-fill"></i> BORRAR</button>
+                        </td>
+
                     </div>
-                    <div>
-                        <p id="text-acercade">{{Projects.description}}</p>
-                    </div>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-light" routerLink="/editprojects/{{Projects.id}}">
-                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
-                    </td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-danger" (click)="delete(Projects.id)">
-                            <i class="bi bi-trash-fill"></i> BORRAR</button>
-                    </td>
-            
-                </div>
-            </article>
-                       
-        </section>
+                </article>
+
+            </section>
+        </div>
     </div>
 </div>
