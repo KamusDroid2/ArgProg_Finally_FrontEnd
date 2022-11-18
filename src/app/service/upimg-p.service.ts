@@ -8,7 +8,7 @@ export class UpImgPService {
   url: string = "";
 
   constructor(private storage: Storage) { }
-  public upImageP($event: any, name: string) {
+  public upImage($event: any, name: string) {
     const file = $event.target.files[0]
     const imgRef = ref(this.storage, `imgP/` + name)
     uploadBytes(imgRef, file)

@@ -7,9 +7,7 @@ import { Projects } from '../model/projects';
   providedIn: 'root'
 })
 export class ProjectsService {
-  getProjects() {
-    throw new Error('Method not implemented.');
-  }
+ 
   URL = 'https://amarokbck2.herokuapp.com/projects/';
 
   constructor(private httpClient: HttpClient) { }
@@ -23,7 +21,7 @@ export class ProjectsService {
   }
 
   public save(projects: Projects): Observable<any> {
-    return this.httpClient.post<any>(this.URL + `create`, projects);
+    return this.httpClient.post<any>(this.URL + 'create', projects);
   }
 
   public update(id: number, projects: Projects): Observable<any> {

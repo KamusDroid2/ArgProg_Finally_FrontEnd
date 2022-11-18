@@ -35,10 +35,10 @@ export class NewProjectsComponent implements OnInit {
     )
   }
   
-  upImageP($event: any) {
+  upImage($event: any) {
     const id = this.activatedRouter.snapshot.params['id'];
     const name = "project" + id;
-    this.upImgPService.upImageP($event, name)
+    this.upImgPService.upImage($event, name)
   }
 
 }

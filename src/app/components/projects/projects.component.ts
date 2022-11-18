@@ -9,7 +9,7 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  projects: Projects[] = [];
+  Projects: Projects[] = [];
 
   constructor(private projectsS: ProjectsService, private tokenService: TokenService) { }
   isLogged = true;
@@ -25,11 +25,7 @@ export class ProjectsComponent implements OnInit {
 
   cargarProjects(): void{
 
-    this.projectsS.lista().subscribe(
-      data =>{
-        this.projects = data;
-      }
-    )
+    this.projectsS.lista().subscribe(data =>{this.Projects = data;})
   }
 
   delete(id?: number){
