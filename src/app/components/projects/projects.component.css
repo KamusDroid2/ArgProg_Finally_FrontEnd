@@ -1,38 +1,36 @@
-.card-deck{
-    margin-top: 5%;
-}
 .row{
     background-color:rgba(12, 86, 223, 0.7);
-    margin-top: 2.5%;
+    margin-top: 0%;
     min-height: auto;
-    min-width: 97%;
+    min-width: 96%;
     display: inline-block;    
     border-radius: 10px;
     margin: 2%;
 }
-.title{
-    margin-bottom: 1%;
-}
-#articles article{
+.card-deck{
     width:95%;
     height: auto;
     float: none;
-    text-align: center;
+    text-align: -webkit-center;
     margin: 2%;
     
-    
+}
+.title{
+    margin-bottom: 1%;
+}
+.boton{
+    align-items: center;
+}
+
+td{
+    width: auto;
+    margin: 1px;
 }
 .body{
     margin: 2px;
 }
 
 
-.img-top{
-    margin: 2%;
-    position:sticky;
-    width: 300px;
-    border-radius: 20px;
-}
 h1{
     margin-left: 3%;
     margin-bottom: 2px;

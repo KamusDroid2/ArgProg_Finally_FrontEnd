@@ -1,6 +1,6 @@
 .card-deck {
   margin-top: 2.5%;
-  display: flex;
+  display: grid;
   background-color: rgba(12, 86, 223, 0.7);
   border-radius: 10px;
 }

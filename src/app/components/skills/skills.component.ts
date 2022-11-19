@@ -15,7 +15,7 @@ import { TokenService } from 'src/app/service/token.service';
 export class SkillsComponent implements OnInit {
   skills: Skills[] = [];
   constructor(private skillsS: SkillsService, private tokenService: TokenService) { }
-  isLogged = true;
+  isLogged = false;
 
   ngOnInit(): void {
     this.cargarSkills();

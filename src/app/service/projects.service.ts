@@ -13,7 +13,7 @@ export class ProjectsService {
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Projects[]> {
-    return this.httpClient.get<Projects[]>(this.URL + 'lista');
+    return this.httpClient.get<Projects[]>(`${this.URL}lista`);
   }
 
   public detail(id: number): Observable<Projects> {

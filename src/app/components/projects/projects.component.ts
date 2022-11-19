@@ -10,9 +10,10 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class ProjectsComponent implements OnInit {
   Projects: Projects[] = [];
+upImgPService: any;
 
   constructor(private projectsS: ProjectsService, private tokenService: TokenService) { }
-  isLogged = true;
+  isLogged = false;
 
   ngOnInit(): void {
     this.cargarProjects();

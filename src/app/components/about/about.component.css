@@ -9,6 +9,8 @@
 .card{
     width:auto;
     display: flow-root;
+    color: transparent;
+    border-width: 0 px;
 }
 #capa{
     background-color: rgba(4, 46, 102, 0.7);

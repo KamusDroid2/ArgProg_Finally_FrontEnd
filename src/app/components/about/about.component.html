@@ -1,7 +1,7 @@
 <div class="card-deck">
-    <div class="card">
+    <div class="">
 
-        <img class="card-img-top" src={{persona.img}} alt="Card image cap">
+        <img class="card-img-top" src={{persona.img}} alt="">
         <div class="card-body">
             <h2 class="card-title">{{persona.name}} {{persona.surname}}</h2>
         </div>
@@ -9,7 +9,7 @@
             <p id="text-acercade">{{persona.description}}</p>
         </div>
 
-        <div class="card">
+        <div class="">
             <div id="redes">
                 <a href="https://facebook.com/0k4m173n6u"><img src="../assets/logos/fb.png" id="fb"></a>
                 <a href="https://www.instagram.com/tenguokami/"><img src="../assets/logos/ig.png" id="fb"></a>
@@ -20,7 +20,7 @@
 
 
             <div class="col-lg-2">
-                <button type="button" class="btn btn-dark" routerLink="/editabout/1" *ngIf="isLogged">
+                <button type="button" class="btn btn-primary" routerLink="/editabout/1" *ngIf="isLogged">
                     Editar
                 </button>
             </div>

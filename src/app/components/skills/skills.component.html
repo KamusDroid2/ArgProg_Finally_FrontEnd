@@ -1,26 +1,21 @@
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row">
     <h1>Skills</h1>
-    <div class="col-lg-2">
+    <div>
         <button type="button" class="btn btn-dark" routerLink="/newskill" *ngIf="isLogged">
             Agregar Skill
         </button>
     </div>
-    <div  *ngFor="let skills of skills">
-        <circle-progress [percent]="(skills.porcen)" 
-        [imageSrc]="''" 
-        [title]="(skills.name)"
-        [showTitle]="true"
-        [showImage]="false"
-        [imageWidth]="100" [imageHeight]="100">
+    <div class="circle" *ngFor="let skills of skills">
+        <circle-progress [percent]="(skills.porcen)" [imageSrc]="''" [title]="(skills.name)" [showTitle]="true"
+            [showImage]="false" [imageWidth]="20" [imageHeight]="20">
         </circle-progress>
         <td *ngIf="isLogged">
-            <button class="btn btn-light" routerLink="/editskills/{{skills.id}}">
-                <i class="bi bi-pencil-fill"></i> EDITAR</button>
+            <button class="btn btn-primary" routerLink="/editskills/{{skills.id}}">
+                <i class="bi bi-pencil-fill"></i>EDITAR</button>
         </td>
         <td *ngIf="isLogged">
-            <button class="btn btn-danger" (click)="delete(skills.id)">
+            <button class="btn btn-primary" (click)="delete(skills.id)">
                 <i class="bi bi-trash-fill"></i> BORRAR</button>
         </td>
     </div>
-    
 </div>

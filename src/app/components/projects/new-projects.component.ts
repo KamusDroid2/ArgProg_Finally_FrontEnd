@@ -13,6 +13,7 @@ export class NewProjectsComponent implements OnInit {
   project!: string;
   description!: string;
   img!: string;
+  Projects: Projects [] = []
   
 
   constructor(
@@ -21,7 +22,10 @@ export class NewProjectsComponent implements OnInit {
     private router: Router,
     public upImgPService: UpImgPService) { }
 
-  ngOnInit(): void {} 
+  ngOnInit(): void {
+    
+    
+  } 
   onCreate(): void {
     const projects = new Projects(this.project, this.description, this.img);
     this.projectsS.save(projects).subscribe(

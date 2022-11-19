@@ -2,13 +2,13 @@
     <div class="container" *ngIf="experiencia">
         <div class="row">
             <h1>Experiencia</h1>
-            <div class="col">
+            <div class="">
                 <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
                     Agregar Experiencia
                 </button>
             </div>
 
-            <div class="col">
+            <div class="">
                 <table class="table">
                     <tbody>
                         <tr *ngFor="let Experiencia of experiencia">
@@ -19,11 +19,11 @@
                                 <h2>{{Experiencia.descriptionExp}}</h2>
                             </td>
                             <td *ngIf="isLogged">
-                                <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+                                <button class="btn btn-primary" routerLink="/editexp/{{Experiencia.id}}">
                                     <i class="bi bi-pencil-fill"></i> EDITAR</button>
                             </td>
                             <td *ngIf="isLogged">
-                                <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                                <button class="btn btn-primary" (click)="delete(Experiencia.id)">
                                     <i class="bi bi-trash-fill"></i> BORRAR</button>
                             </td>
                         </tr>

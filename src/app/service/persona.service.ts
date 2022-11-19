@@ -8,9 +8,7 @@ import { persona} from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  getPersona() {
-    throw new Error('Method not implemented.');
-  }
+  
   URL = ' https://amarokbck2.herokuapp.com/personas/';
 
   constructor(private httpClient: HttpClient) { }

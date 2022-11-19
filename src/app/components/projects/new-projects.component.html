@@ -14,7 +14,7 @@
             </div>
             <div class="form-group">
                 <label for="img">Imagen</label>
-                <input type="file" class="form-control" id="img" name="img" [(ngModel)]="img" (change)="upImage($event)" accept=".jpg, .bmp, .tif">
+                <input type="file" (change)="upImage($event)" id="img" name="img" [(ngModel)]="img" (change)="upImage($event)"accept=".gif, .png, .jpg, .bmp, .tif">
             </div>
             <br>
             <div class="image">
