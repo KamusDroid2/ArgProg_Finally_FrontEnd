@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Projects } from 'src/app/model/projects';
 import { ProjectsService } from 'src/app/service/projects.service';
-import { UpImgPService } from 'src/app/service/upimg-p.service';
+import { UpImgService } from 'src/app/service/up-img.service';
 
 @Component({
   selector: 'app-new-projects',
@@ -20,7 +20,7 @@ export class NewProjectsComponent implements OnInit {
     private projectsS: ProjectsService,
     private activatedRouter: ActivatedRoute,
     private router: Router,
-    public upImgPService: UpImgPService) { }
+    public upImgService: UpImgService) { }
 
   ngOnInit(): void {
     
@@ -42,7 +42,7 @@ export class NewProjectsComponent implements OnInit {
   upImage($event: any) {
     const id = this.activatedRouter.snapshot.params['id'];
     const name = "project" + id;
-    this.upImgPService.upImage($event, name)
+    this.upImgService.upImage($event, name)
   }
 
 }

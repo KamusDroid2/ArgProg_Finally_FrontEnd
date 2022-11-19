@@ -8,8 +8,7 @@
         </div>
         <div class="card-deck" *ngFor="let Project of Projects">
             <div>
-                <img *ngIf="Project.img" [src]="Project.img" />
-            </div>
+                <img class="card-img-top" src={{Project.img}} alt="">            </div>
             <div class="card-body">
                 <h2 class="card-title">{{Project.project}}</h2>
             </div>
