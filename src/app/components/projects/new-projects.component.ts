@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Projects } from 'src/app/model/projects';
 import { ProjectsService } from 'src/app/service/projects.service';
-import { UpImgService } from 'src/app/service/up-img.service';
+import { UpImgPService } from 'src/app/service/upimg-p.service';
 
 @Component({
   selector: 'app-new-projects',
@@ -13,19 +13,20 @@ export class NewProjectsComponent implements OnInit {
   project!: string;
   description!: string;
   img!: string;
-  Projects: Projects [] = []
+  
   
 
   constructor(
     private projectsS: ProjectsService,
     private activatedRouter: ActivatedRoute,
     private router: Router,
-    public upImgService: UpImgService) { }
+    public upImgPService: UpImgPService) { }
 
   ngOnInit(): void {
-    
-    
+    this.upImage;
+       
   } 
+
   onCreate(): void {
     const projects = new Projects(this.project, this.description, this.img);
     this.projectsS.save(projects).subscribe(
@@ -38,11 +39,15 @@ export class NewProjectsComponent implements OnInit {
       }
     )
   }
-  
   upImage($event: any) {
-    const id = this.activatedRouter.snapshot.params['id'];
-    const name = "project" + id;
-    this.upImgService.upImage($event, name)
+    this.upImgPService.upImage($event)
   }
+
+  getImage($event: any){
+    this.upImgPService.getImage()
+  }
+  
+  
+  
 
 }

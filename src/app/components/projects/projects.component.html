@@ -1,4 +1,4 @@
-<div *ngIf="Projects">
+<div *ngIf="projects">
     <div class="row">
         <h1 class="title">Proyectos</h1>
         <div>
@@ -6,28 +6,24 @@
                 Agregar Proyecto
             </button>
         </div>
-        <div class="card-deck" *ngFor="let Project of Projects">
+        <div class="card-deck" *ngFor="let projects of projects">
             <div>
-                <img class="card-img-top" src={{Project.img}} alt="">            </div>
+                <img class="card-img-top" src={{projects.img}} alt="">
+            </div>
             <div class="card-body">
-                <h2 class="card-title">{{Project.project}}</h2>
+                <h2 class="card-title">{{projects.project}}</h2>
             </div>
             <div>
-                <p id="text-acercade">{{Project.description}}</p>
+                <p id="text-acercade">{{projects.description}}</p>
             </div>
             <td *ngIf="isLogged">
-                <button class="btn btn-primary" routerLink="/editprojects/{{Project.id}}">
+                <button class="btn btn-primary" routerLink="/editprojects/{{projects.id}}">
                     <i class="bi bi-pencil-fill"></i> EDITAR</button>
             </td>
             <td *ngIf="isLogged">
-                <button class="btn btn-primary" (click)="delete(Project.id)">
+                <button class="btn btn-primary" (click)="delete(projects.id)">
                     <i class="bi bi-trash-fill"></i> BORRAR</button>
             </td>
-
-
-
-
-
         </div>
     </div>
 </div>

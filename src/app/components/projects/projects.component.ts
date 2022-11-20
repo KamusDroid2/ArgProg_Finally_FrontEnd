@@ -9,8 +9,7 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  Projects: Projects[] = [];
-upImgPService: any;
+  projects: Projects[] = [];
 
   constructor(private projectsS: ProjectsService, private tokenService: TokenService) { }
   isLogged = false;
@@ -26,7 +25,7 @@ upImgPService: any;
 
   cargarProjects(): void{
 
-    this.projectsS.lista().subscribe(data =>{this.Projects = data;})
+    this.projectsS.lista().subscribe(data =>{this.projects = data;})
   }
 
   delete(id?: number){
