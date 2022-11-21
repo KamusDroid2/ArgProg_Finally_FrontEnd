@@ -26,15 +26,15 @@ export class UpImgPService {
   }
 
   getImage() {
-    const imageRef = ref(this.storage, 'img')
+    const imageRef = ref(this.storage, 'img');
     list(imageRef)
     .then(async response => {
       console.log(response);
-      
+      this.img = [];      
        for(let item of response.items){
-         const url = await getDownloadURL(item);
-         console.log(url);
-         this.img.push(url);
+         this.url = await getDownloadURL(item);
+         console.log(this.url);
+         this.img.push(this.url);
         }
     })
     .catch(error => console.log(error))

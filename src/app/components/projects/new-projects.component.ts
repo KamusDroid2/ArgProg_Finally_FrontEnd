@@ -13,7 +13,7 @@ export class NewProjectsComponent implements OnInit {
   project!: string;
   description!: string;
   img!: string;
-  
+  Projects: Projects[] = [];
   
 
   constructor(
@@ -26,9 +26,9 @@ export class NewProjectsComponent implements OnInit {
     this.upImage;
        
   } 
-
   onCreate(): void {
     const projects = new Projects(this.project, this.description, this.img);
+    
     this.projectsS.save(projects).subscribe(
       data => {
         alert("Proyecto añadido correctamente");
@@ -38,16 +38,15 @@ export class NewProjectsComponent implements OnInit {
         this.router.navigate(['']);
       }
     )
+    this.img = this.upImgPService.url;
+
   }
+  
   upImage($event: any) {
+    const id = this.activatedRouter.snapshot.params['id'];
+    
     this.upImgPService.upImage($event)
   }
-
-  getImage($event: any){
-    this.upImgPService.getImage()
-  }
-  
-  
   
 
 }
