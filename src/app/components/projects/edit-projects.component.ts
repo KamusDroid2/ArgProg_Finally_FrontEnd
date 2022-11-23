@@ -11,7 +11,7 @@ import { UpImgPService } from 'src/app/service/upimg-p.service';
 })
 export class EditProjectsComponent implements OnInit {
 
-  Projects: Projects = [];
+Projects: any = [];
 
   constructor(
     private projectsS: ProjectsService,
