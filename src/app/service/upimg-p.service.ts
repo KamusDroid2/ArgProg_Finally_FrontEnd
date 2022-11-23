@@ -14,24 +14,25 @@ export class UpImgPService {
    }
 
 
-  public upImage($event: any) {
+  public upImage($event: any, name: string) {
     const file = $event.target.files[0];
     console.log(file);
-    const imgRef = ref(this.storage, `img/${file.name}`);
+    const imgRef = ref(this.storage, `imgP/` + name);
     uploadBytes(imgRef, file)
-      .then(response => { console.log(response) 
+      .then(response => { alert("Subió la imagen, ahora la tiene que mostrar")
+        console.log(response) 
         this.getImage() })
       .catch(error => console.log(error)
       )
   }
 
   getImage() {
-    const imageRef = ref(this.storage, 'img');
+    const imageRef = ref(this.storage, 'imgP');
     list(imageRef)
-    .then(async response => {
+    .then(async response => { alert("Recuperando la lista de imagenes y vacia la lista luego")
       console.log(response);
       this.img = [];      
-       for(let item of response.items){
+       for(let item of response.items){ alert("Recupera la url. Hace push")
          this.url = await getDownloadURL(item);
          console.log(this.url);
          this.img.push(this.url);
@@ -40,5 +41,3 @@ export class UpImgPService {
     .catch(error => console.log(error))
   }
 }
-
-

@@ -11,7 +11,7 @@ import { UpImgPService } from 'src/app/service/upimg-p.service';
 })
 export class EditProjectsComponent implements OnInit {
 
-  Projects: Projects = null;
+  Projects: Projects = [];
 
   constructor(
     private projectsS: ProjectsService,
@@ -23,8 +23,10 @@ export class EditProjectsComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.projectsS.detail(id).subscribe(
+    this.projectsS.getProject(id).subscribe(
       data =>{
+        //recien inicia 
+        alert("Editar Ingresar");
         this.Projects = data;
       }, err =>{
          alert("Error al modificar");
@@ -35,8 +37,7 @@ export class EditProjectsComponent implements OnInit {
 
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id'];
-    this.Projects.img = this.upImgPService.url;
-    this.projectsS.update(id, this.Projects).subscribe(
+    this.projectsS.updateProjects(id, this.Projects).subscribe(
       data => {
         this.router.navigate(['']);
       }, err => {
@@ -47,8 +48,11 @@ export class EditProjectsComponent implements OnInit {
   }
   upImage($event:any){
     const id = this.activatedRouter.snapshot.params['id'];
-    
-    this.upImgPService.upImage($event)
+    const name = "project" + id;
+    this.upImgPService.upImage($event, name)
+    alert ("A ver que pasa");
+    this.Projects.img = this.upImgPService.url;
+
   }
 
 }

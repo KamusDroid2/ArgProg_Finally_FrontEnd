@@ -29,6 +29,8 @@ import { EditSkillsComponent } from './components/skills/edit-skills.component';
 import { NewSkillsComponent } from './components/skills/new-skills.component';
 import { EditProjectsComponent } from './components/projects/edit-projects.component';
 import { NewProjectsComponent } from './components/projects/new-projects.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireStorageModule, BUCKET } from '@angular/fire/compat/storage';
 
 @NgModule({
   declarations: [
@@ -59,6 +61,8 @@ import { NewProjectsComponent } from './components/projects/new-projects.compone
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireStorageModule,
     NgCircleProgressModule.forRoot({"backgroundGradient": true,
     "backgroundColor": "#0d84bf",
     "backgroundGradientStopColor": "#000000",
@@ -92,7 +96,9 @@ import { NewProjectsComponent } from './components/projects/new-projects.compone
   ],
 
   providers: [
-    interceptorProvider
+    interceptorProvider,
+    { provide: BUCKET, useValue: 'my-bucket-name' }
+
   ],
   bootstrap: [AppComponent]
 })
